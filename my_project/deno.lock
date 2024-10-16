@@ -1,13 +1,26 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@helpr/express@~0.1.1": "0.1.1",
     "jsr:@std/assert@1": "1.0.6",
+    "jsr:@std/assert@^1.0.6": "1.0.6",
+    "jsr:@std/expect@*": "1.0.5",
     "jsr:@std/internal@^1.0.4": "1.0.4"
   },
   "jsr": {
+    "@helpr/express@0.1.1": {
+      "integrity": "15391b350b92ab5102919c555179c954ff3d5974d7f170b99880836e249756d2"
+    },
     "@std/assert@1.0.6": {
       "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207",
       "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/expect@1.0.5": {
+      "integrity": "8c7ac797e2ffe57becc6399c0f2fd06230cb9ef124d45229c6e592c563824af1",
+      "dependencies": [
+        "jsr:@std/assert@^1.0.6",
         "jsr:@std/internal"
       ]
     },
@@ -17,6 +30,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@helpr/express@~0.1.1",
       "jsr:@std/assert@1"
     ]
   }
